@@ -14,15 +14,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        MotionLayout motionLayout = findViewById(R.id.motionLayout);
-        TransitionManager.beginDelayedTransition(motionLayout);
+//        MotionLayout motionLayout = findViewById(R.id.motionLayout);
+//        TransitionManager.beginDelayedTransition(motionLayout);
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(MainActivity.this,MainActivity2.class));
-                finish();
+                Intent intent = new Intent(MainActivity.this, MainActivity2.class);
+                startActivity(intent);
+                overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             }
-        },3000);
+        }, 3000);
     }
 }
