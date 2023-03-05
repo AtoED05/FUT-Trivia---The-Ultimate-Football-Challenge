@@ -6,7 +6,7 @@
     <Transition
         motion:constraintSetEnd="@+id/end"
         motion:constraintSetStart="@id/start"
-        motion:duration="2000"
+        motion:duration="1000"
         motion:autoTransition="animateToEnd">
        <KeyFrameSet>
        </KeyFrameSet>
@@ -24,7 +24,7 @@
             android:scaleX="10"
             android:scaleY="10" />
         <Constraint
-            android:id="@+id/whiteAppLogo"
+            android:id="@+id/blackAppLogo"
             motion:layout_constraintEnd_toEndOf="parent"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -35,7 +35,7 @@
             android:scaleY="10"
             android:alpha="0" />
         <Constraint
-            android:id="@+id/blackAppLogo"
+            android:id="@+id/redAppLogo"
             motion:layout_constraintEnd_toEndOf="parent"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -58,7 +58,7 @@
             android:scaleX="0"
             android:scaleY="0" />
         <Constraint
-            android:id="@+id/whiteAppLogo"
+            android:id="@+id/blackAppLogo"
             motion:layout_constraintEnd_toEndOf="parent"
             android:layout_width="100dp"
             android:layout_height="100dp"
@@ -70,7 +70,7 @@
             android:alpha="1"
             motion:transitionEasing="cubic(1,0,1,0)" />
         <Constraint
-            android:id="@+id/blackAppLogo"
+            android:id="@+id/redAppLogo"
             motion:layout_constraintEnd_toEndOf="parent"
             android:layout_width="100dp"
             android:layout_height="100dp"

@@ -7,15 +7,24 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.transition.TransitionManager;
+import android.view.animation.AccelerateDecelerateInterpolator;
+import android.view.animation.Animation;
+import android.view.animation.TranslateAnimation;
+import android.widget.ImageView;
+
+import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import java.util.concurrent.TimeUnit;
 
 public class MainActivity extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-//        MotionLayout motionLayout = findViewById(R.id.motionLayout);
-//        TransitionManager.beginDelayedTransition(motionLayout);
+
 
         new Handler().postDelayed(new Runnable() {
             @Override
@@ -26,4 +35,5 @@ public class MainActivity extends AppCompatActivity {
             }
         }, 3000);
     }
+
 }
