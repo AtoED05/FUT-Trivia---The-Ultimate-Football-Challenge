@@ -12,7 +12,5 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
     @Override
-    public void onBackPressed() {
-        
-    }
+    public void onBackPressed(){}
 }
