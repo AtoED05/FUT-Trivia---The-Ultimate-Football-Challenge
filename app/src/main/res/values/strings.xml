@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">FUT TRIVIA</string>
+    <string name="messi">Messi</string>
+    <string name="neymar">Neymar</string>
+    <string name="background_image">Background Image</string>
+    <string name="Neymar" />
 </resources>
